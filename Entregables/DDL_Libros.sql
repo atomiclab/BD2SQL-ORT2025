@@ -1,3 +1,9 @@
+CREATE DATABASE BD2_TP1_Ramos_Mendez_Tubaro;
+GO
+
+USE BD2_TP1_Ramos_Mendez_Tubaro;
+GO
+
 -- Alumnos:
 -- - Fabiola Ramos
 -- - Facundo Méndez

@@ -7,6 +7,12 @@
 -- Trigger para actualizar el estado de la copia en la tabla COPIAS
 -- cuando se inserta un nuevo préstamo o se registra una devolución.
 --------------------------------------------------------------------------
+
+--
+USE BD2_TP1_Ramos_Mendez_Tubaro;
+GO
+--
+
 CREATE TRIGGER TRG_ActualizarEstadoCopia
 ON PRESTAMO
 AFTER INSERT, UPDATE
@@ -41,6 +47,11 @@ GO
 
 PRINT 'Trigger TRG_ActualizarEstadoCopia creado.'
 GO
+
+--Borrar Trigger OJO
+DROP TRIGGER TRG_ActualizarEstadoCopia;
+GO
+--
 
 --------------------------------------------------------------------------
 -- 2. STORED PROCEDURE
@@ -123,6 +134,10 @@ GO
 PRINT 'Stored Procedure SP_RegistrarPrestamo creado.'
 GO
 
+-- BORRAR SP
+DROP PROCEDURE SP_RegistrarPrestamo;
+GO
+--
 --------------------------------------------------------------------------
 -- 3. FUNCIÓN
 --------------------------------------------------------------------------
@@ -145,6 +160,10 @@ GO
 PRINT 'Función FN_ObtenerDescripcionTipoLibro creada.'
 GO
 
+--Borrar FN
+DROP FUNCTION FN_ObtenerDescripcionTipoLibro;
+GO
+--
 --------------------------------------------------------------------------
 -- 4. TRANSACCIÓN (Script con TRY-CATCH)
 --------------------------------------------------------------------------
@@ -265,3 +284,8 @@ GO
 
 PRINT 'Vista VW_InconsistenciasPrestamosCopias creada.'
 GO
+
+--Borrar View
+DROP VIEW VW_InconsistenciasPrestamosCopias;
+GO
+--

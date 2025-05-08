@@ -2,7 +2,10 @@
 -- - Fabiola Ramos
 -- - Facundo Méndez
 -- - Gino Tubaro
-
+--
+USE BD2_TP1_Ramos_Mendez_Tubaro;
+GO
+--
 --delete from Libros
 INSERT INTO LIBRO VALUES
 (5078912,'LAS MIL Y UNA NOCHES','GALLAND A.','no',20.30,34.20,1948, 'D')
